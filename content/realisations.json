@@ -1,0 +1,52 @@
+{
+  "galerie": [
+    {
+      "image": "images/realisation-1.jpg",
+      "alt": "Salon peinture",
+      "cat": "peinture",
+      "cat_label": "Peinture",
+      "titre": "Salon — Paris 15e",
+      "texte": "Rénovation complète d'un salon de 28 m². Enduit de lissage, peinture bicolore tendance. Résultat livré en 3 jours."
+    },
+    {
+      "image": "images/realisation-2.jpg",
+      "alt": "Cloison BA13",
+      "cat": "ba13",
+      "cat_label": "BA13",
+      "titre": "Cloison — Essonne (91)",
+      "texte": "Création d'une chambre supplémentaire par pose d'une cloison BA13 avec isolation phonique. Finition prête à peindre."
+    },
+    {
+      "image": "images/realisation-3.jpg",
+      "alt": "Rénovation cuisine",
+      "cat": "renovation",
+      "cat_label": "Rénovation complète",
+      "titre": "Appartement — Évry-Courcouronnes",
+      "texte": "Rénovation complète d'un appartement de 55 m² : démolition, BA13, plâtrerie, peinture. Livré clé en main en 3 semaines."
+    },
+    {
+      "image": "images/realisation-4.jpg",
+      "alt": "Chambre peinture",
+      "cat": "peinture",
+      "cat_label": "Peinture",
+      "titre": "Chambre — Corbeil-Essonnes",
+      "texte": "Rafraîchissement complet d'une chambre parentale. Peinture satinée blanc cassé avec tête de lit peinte en couleur accent."
+    },
+    {
+      "image": "images/realisation-5.jpg",
+      "alt": "Faux plafond",
+      "cat": "ba13",
+      "cat_label": "BA13",
+      "titre": "Faux plafond — Mennecy",
+      "texte": "Pose d'un faux plafond BA13 avec spots encastrés dans un séjour de 35 m². Isolation phonique intégrée, finition laquée."
+    },
+    {
+      "image": "images/realisation-6.jpg",
+      "alt": "Réaménagement bureau",
+      "cat": "ba13",
+      "cat_label": "BA13",
+      "titre": "Réaménagement bureau — Mennecy",
+      "texte": "Transformation d'un plateau de bureaux en espace de travail moderne avec peinture, revêtement de sol, éclairage LED et aménagement sur mesure."
+    }
+  ]
+}

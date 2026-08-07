@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "title_main": "ARTISAN",
+    "title_sub": "Rénovation intérieure tous corps d'état",
+    "subtitle": "Peinture, pose de BA13, plâtrerie, aménagement sur mesure. ARTISAN BTP prend en charge l'ensemble de vos travaux du début jusqu'à la livraison.",
+    "cta_primary": "Demander un devis gratuit",
+    "cta_secondary": "Nos prestations",
+    "stats": [
+      {
+        "value": "+150",
+        "label": "Chantiers réalisés"
+      },
+      {
+        "value": "10 ans",
+        "label": "D'expérience"
+      },
+      {
+        "value": "48h",
+        "label": "Délai de réponse"
+      },
+      {
+        "value": "Île-de-France",
+        "label": "Zone d'intervention"
+      }
+    ]
+  },
+  "apercu": {
+    "services_title": "Une expertise complète en rénovation intérieure",
+    "services_text": "Peinture, pose de BA13, plâtrerie, décoration, rénovation complète : nous coordonnons tous les corps de métier pour un chantier clé en main, du devis à la livraison.",
+    "tags": [
+      "Peinture intérieure",
+      "Pose de BA13",
+      "Plâtrerie et enduits",
+      "Décoration intérieure",
+      "Rénovation complète"
+    ],
+    "cta_services": "Voir tous nos services",
+    "realisations_title": "Chaque photo raconte une transformation",
+    "gallery_preview": [
+      {
+        "image": "images/projet3.jpg",
+        "alt": "Cuisine rénovation complète"
+      },
+      {
+        "image": "images/projet1.jpg",
+        "alt": "Salon peinture gris bleuté"
+      },
+      {
+        "image": "images/projet5.jpg",
+        "alt": "Séjour faux plafond BA13"
+      }
+    ],
+    "cta_realisations": "Voir toutes nos réalisations"
+  },
+  "confiance": {
+    "points": [
+      {
+        "title": "Garantie décennale",
+        "text": "Tous nos chantiers sont couverts, en toute tranquillité."
+      },
+      {
+        "title": "Un seul interlocuteur",
+        "text": "Du devis à la livraison, vous suivez votre projet avec la même personne."
+      },
+      {
+        "title": "Chantier propre & soigné",
+        "text": "Protection des lieux, nettoyage en fin de chantier, respect des délais annoncés."
+      }
+    ],
+    "badges": [
+      "Assurance décennale",
+      "RGE",
+      "Qualibat",
+      "Devis gratuit"
+    ]
+  },
+  "temoignage": {
+    "quote": "Votre intérieur transformé. Vos délais respectés. Votre budget maîtrisé.",
+    "quote_sub": "C'est notre engagement à chaque chantier.",
+    "avis": [
+      {
+        "texte": "Rénovation complète de notre salon-cuisine : le devis était clair, l'équipe ponctuelle chaque jour, et le résultat est vraiment à la hauteur de ce qu'on attendait. Chantier propre du début à la fin.",
+        "auteur": "Camille R. — Évry-Courcouronnes"
+      },
+      {
+        "texte": "Nous avons fait appel à eux pour la pose de BA13 et la peinture de deux chambres. Délais respectés, communication simple avec André tout le long du chantier. Je recommande sans hésiter.",
+        "auteur": "Julien M. — Corbeil-Essonnes"
+      },
+      {
+        "texte": "Très satisfait de la rénovation de notre salle de bain. Massinissa a su nous conseiller sur les finitions, et le chantier a été livré dans les temps annoncés. Rapport qualité-prix excellent.",
+        "auteur": "Sophie L. — Mennecy"
+      }
+    ]
+  }
+}
