@@ -3,8 +3,8 @@
    ⚠️ À CONFIGURER une fois votre dépôt GitHub créé : ces 2 fichiers
    partagent cette config, vous n'avez besoin de la modifier qu'ICI.
    ========================================================================== */
-const GITHUB_USER   = 'VOTRE-PSEUDO-GITHUB';   // ex: 'andre-artisanbtp'
-const GITHUB_REPO   = 'VOTRE-DEPOT';           // ex: 'site-artisan-btp'
+const GITHUB_USER   = 'ArtisantBTP';   // ex: 'andre-artisanbtp'
+const GITHUB_REPO   = 'site-artisan-btp';            // ex: 'site-artisan-btp'
 const GITHUB_BRANCH = 'main';
 
 const RAW_ROOT = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/`;
