@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARTISAN BTP — Rénovation Intérieure Tous Corps d'État</title>
+  <link rel="icon" type="image/png" href="images/favicon-32.png" />
+  <link rel="apple-touch-icon" href="images/favicon-180.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#accueil" class="nav__logo">
+      <img src="images/logo.png" alt="ARTISAN BTP" class="nav__logo-img" />
+    </a>
+    <ul class="nav__links">
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="realisations.html">Réalisations</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="#equipe">L'équipe</a></li>
+      <li><a href="#contact" class="nav__cta">Demande de devis</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MENU MOBILE -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="mobileClose">&#10005;</button>
+    <ul>
+      <li><a href="#accueil" class="mobile-link">Accueil</a></li>
+      <li><a href="services.html" class="mobile-link">Services</a></li>
+      <li><a href="realisations.html" class="mobile-link">Réalisations</a></li>
+      <li><a href="blog.html" class="mobile-link">Blog</a></li>
+      <li><a href="#equipe" class="mobile-link">L'équipe</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <h1 class="hero__title">
+        <span class="hero__title-main">ARTISAN</span>
+        <span class="hero__title-sub">Rénovation intérieure tous corps d'état</span>
+      </h1>
+      <p class="hero__subtitle">Peinture, pose de BA13, plâtrerie, aménagement sur mesure. ARTISAN BTP prend en charge l'ensemble de vos travaux du début jusqu'à la livraison.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Demander un devis gratuit</a>
+        <a href="services.html" class="btn btn--ghost">Nos prestations</a>
+      </div>
+    </div>
+    <div class="hero__stats">
+      <div class="container">
+        <div class="hero__stats-grid">
+          <div class="hero__stat">
+            <strong>+150</strong>
+            <span>Chantiers réalisés</span>
+          </div>
+          <div class="hero__stat">
+            <strong>10 ans</strong>
+            <span>D'expérience</span>
+          </div>
+          <div class="hero__stat">
+            <strong>48h</strong>
+            <span>Délai de réponse</span>
+          </div>
+          <div class="hero__stat">
+            <strong>Île-de-France</strong>
+            <span>Zone d'intervention</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <!-- CE QU'ON FAIT — section fusionnée services + réalisations -->
+  <section class="apercu" id="apercu">
+    <div class="container apercu__inner">
+
+      <div class="apercu__col apercu__col--services reveal-left">
+        <p class="section-eyebrow">Nos prestations</p>
+        <h2 class="section-title">Une expertise complète<br>en rénovation intérieure</h2>
+        <p class="apercu__text">Peinture, pose de BA13, plâtrerie, décoration, rénovation complète : nous coordonnons tous les corps de métier pour un chantier clé en main, du devis à la livraison.</p>
+        <ul class="apercu__tags">
+          <li>Peinture intérieure</li>
+          <li>Pose de BA13</li>
+          <li>Plâtrerie et enduits</li>
+          <li>Décoration intérieure</li>
+          <li>Rénovation complète</li>
+        </ul>
+        <a href="services.html" class="btn btn--primary">Voir tous nos services</a>
+      </div>
+
+      <div class="apercu__col apercu__col--realisations reveal-right">
+        <p class="section-eyebrow">Nos réalisations</p>
+        <h2 class="section-title">Chaque photo raconte une transformation</h2>
+        <div class="apercu__photos">
+          <img src="images/projet3.jpg" alt="Cuisine rénovation complète" loading="lazy" />
+          <img src="images/projet1.jpg" alt="Salon peinture gris bleuté" loading="lazy" />
+          <img src="images/projet5.jpg" alt="Séjour faux plafond BA13" loading="lazy" />
+        </div>
+        <a href="realisations.html" class="btn btn--white">Voir toutes nos réalisations</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONFIANCE — engagements + certifications -->
+  <!-- ⚠️ N'affichez un badge de certification (RGE, Qualibat...) que si vous la détenez réellement — c'est une obligation légale, pas une option marketing. -->
+  <section class="confiance">
+    <div class="container">
+      <div class="confiance__points">
+        <div class="confiance__point reveal">
+          <svg class="confiance__icon" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Garantie décennale</h3>
+          <p>Tous nos chantiers sont couverts, en toute tranquillité.</p>
+        </div>
+        <div class="confiance__point reveal">
+          <svg class="confiance__icon" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M2 12l4-4 3 3 4-4 3 3 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 11l-3 3a1.8 1.8 0 002.5 2.5L11 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 14l1.5 1.5a1.8 1.8 0 002.5-2.5L15 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Un seul interlocuteur</h3>
+          <p>Du devis à la livraison, vous suivez votre projet avec la même personne.</p>
+        </div>
+        <div class="confiance__point reveal">
+          <svg class="confiance__icon" width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M15 3l5 5-8 8-5-1-1-5 8-8z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M6 15L2 21M2 15l4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Chantier propre &amp; soigné</h3>
+          <p>Protection des lieux, nettoyage en fin de chantier, respect des délais annoncés.</p>
+        </div>
+      </div>
+
+      <div class="confiance__badges reveal">
+        <span class="confiance__badge">Assurance décennale</span>
+        <span class="confiance__badge">RGE</span>
+        <span class="confiance__badge">Qualibat</span>
+        <span class="confiance__badge">Devis gratuit</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="temoignage">
+    <div class="container">
+      <blockquote class="temoignage__quote reveal">
+        <p style="white-space: nowrap;">
+          Votre intérieur transformé. Vos délais respectés. Votre budget maîtrisé.
+        </p>
+        <p class="temoignage__sub">C'est notre engagement à chaque chantier.</p>
+        ARTISAN BTP — Île-de-France
+      </blockquote>
+
+      <!-- ⚠️ À PERSONNALISER : remplacez ces 3 avis par de vrais avis clients (ex: copiés depuis votre fiche Google Business) -->
+      <div class="temoignage__avis">
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">★★★★★</div>
+          <p>« Rénovation complète de notre salon-cuisine : le devis était clair, l'équipe ponctuelle chaque jour, et le résultat est vraiment à la hauteur de ce qu'on attendait. Chantier propre du début à la fin. »</p>
+          <span class="avis-card__auteur">Camille R. — Évry-Courcouronnes</span>
+        </div>
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">★★★★★</div>
+          <p>« Nous avons fait appel à eux pour la pose de BA13 et la peinture de deux chambres. Délais respectés, communication simple avec André tout le long du chantier. Je recommande sans hésiter. »</p>
+          <span class="avis-card__auteur">Julien M. — Corbeil-Essonnes</span>
+        </div>
+        <div class="avis-card reveal">
+          <div class="avis-card__stars">★★★★★</div>
+          <p>« Très satisfait de la rénovation de notre salle de bain. Massinissa a su nous conseiller sur les finitions, et le chantier a été livré dans les temps annoncés. Rapport qualité-prix excellent. »</p>
+          <span class="avis-card__auteur">Sophie L. — Mennecy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="equipe" id="equipe">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">L'équipe</p>
+        <h2 class="section-title">Vos interlocuteurs</h2>
+      </div>
+      <div class="equipe__grid">
+
+        <div class="equipe__card reveal">
+          <img src="images/andre.jpg" alt="André Maury" class="equipe__avatar-photo zoomable" />
+          <div class="equipe__info">
+            <p class="equipe__role">Fondateur et gérant</p>
+            <h3>André Maury</h3>
+            <p>Gérant d'ARTISAN BTP, André Maury apporte une solide expertise en gestion d'entreprise, immobilier et administration. Il assure la direction stratégique de la société, la relation client et le bon déroulement de chaque engagement, de la signature du devis jusqu'à la livraison finale.</p>
+            <div class="equipe__contacts">
+              <a href="tel:+33685079850">06 85 07 98 50</a>
+              <a href="mailto:andremaury1957@gmail.com">andremaury1957@gmail.com</a>
+              <a href="#contact" class="equipe__rdv-btn" data-contact="andre">Prendre rendez-vous</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="equipe__card reveal">
+          <img src="images/massinissa.jpg" alt="Massinissa Yadel" class="equipe__avatar-photo zoomable" />
+          <div class="equipe__info">
+            <p class="equipe__role">Chef de projet</p>
+            <h3>Massinissa Yadel</h3>
+            <p>Chef de projet confirmé, Massinissa Yadel dirige sur le terrain l'ensemble des chantiers ARTISAN BTP. À la tête d'une équipe d'artisans qualifiés, il coordonne chaque corps de métier, garantit le respect des délais et veille à la qualité d'exécution de chaque réalisation, du premier coup de marteau jusqu'à la remise des clés.</p>
+            <div class="equipe__contacts">
+              <a href="tel:+33780861739">07 80 86 17 39</a>
+              <a href="mailto:yadelmassinissa@gmail.com">yadelmassinissa@gmail.com</a>
+              <a href="#contact" class="equipe__rdv-btn" data-contact="massinissa">Prendre rendez-vous</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+
+      <div class="contact__info reveal-left">
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-title">Parlons de votre projet</h2>
+        <p>Devis gratuit sous 48h. Nous nous déplaçons sur toute l'Île-de-France pour évaluer votre projet sans engagement.</p>
+
+        <div class="contact__bloc">
+          <p class="contact__bloc-label">André Maury</p>
+          <a href="tel:+33685079850">06 85 07 98 50</a>
+          <a href="mailto:andremaury1957@gmail.com">andremaury1957@gmail.com</a>
+        </div>
+
+        <div class="contact__bloc">
+          <p class="contact__bloc-label">Massinissa Yadel</p>
+          <a href="tel:+33780861739">07 80 86 17 39</a>
+          <a href="mailto:yadelmassinissa@gmail.com">yadelmassinissa@gmail.com</a>
+        </div>
+
+        <div class="contact__bloc">
+          <p class="contact__bloc-label">Adresse</p>
+          <span>46 rue Champoreux, 91540 Mennecy</span>
+          <a href="tel:+33164570916">01 64 57 09 16</a>
+        </div>
+      </div>
+
+      <form class="contact__form" id="contactForm" novalidate>
+        <h3 class="contact__form-title">Planifier un rendez-vous</h3>
+
+        <div class="form__group">
+          <label>Avec qui souhaitez-vous un rendez-vous ?</label>
+          <div class="form__radio-group">
+            <label class="form__radio">
+              <input type="radio" name="interlocuteur" value="andre" id="radioAndre" />
+              <span class="form__radio-box">André Maury</span>
+            </label>
+            <label class="form__radio">
+              <input type="radio" name="interlocuteur" value="massinissa" id="radioMassinissa" />
+              <span class="form__radio-box">Massinissa Yadel</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__group">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" placeholder="Jean Dupont" required />
+          </div>
+          <div class="form__group">
+            <label for="tel">Téléphone *</label>
+            <input type="tel" id="tel" name="tel" placeholder="06 12 34 56 78" required />
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+        </div>
+
+        <div class="form__group">
+          <label>Choisissez un créneau disponible *</label>
+          <p class="form__calendly-hint" id="calendlyHint">Sélectionnez d'abord un interlocuteur ci-dessus.</p>
+          <div id="calendlyWidget" class="calendly-inline-widget"></div>
+          <input type="hidden" id="rdvDateTime" name="rdvDateTime" required />
+        </div>
+
+        <div class="form__group">
+          <label for="type">Type de prestation</label>
+          <select id="type" name="type">
+            <option value="devis">Demande de devis</option>
+            <option value="peinture">Peinture intérieure</option>
+            <option value="ba13">Pose de BA13</option>
+            <option value="renovation">Rénovation complète</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label for="message">Décrivez votre projet *</label>
+          <textarea id="message" name="message" rows="4" placeholder="Ex : rénovation d'un appartement de 65 m², peinture salon et chambres, faux plafond dans le couloir..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--full">Envoyer ma demande</button>
+        <p class="form__note">* Champs obligatoires — Réponse sous 48h</p>
+
+        <div class="form__success" id="formSuccess">
+          <strong>Demande envoyée.</strong>
+          <span>Nous vous répondons dans les plus brefs délais.</span>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__logos">
+          <img src="images/logo.png" alt="ARTISAN BTP" class="footer__logo-img" />
+          <div class="footer__partenaire-sep"></div>
+          <a href="https://airwork-cvc.fr/" target="_blank" rel="noopener">
+            <img src="images/airwork.png" alt="Airwork CVC" class="footer__logo-partenaire" />
+          </a>
+        </div>
+        <p class="footer__partenaire-text">En partenariat avec Airwork, spécialiste CVC en Île-de-France.</p>
+      </div>
+      <div class="footer__links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <a href="#equipe">L'équipe</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__contact">
+        <span>46 rue Champoreux, 91540 Mennecy</span>
+        <a href="tel:+33164570916">01 64 57 09 16</a>
+        <a href="tel:+33685079850">André Maury : 06 85 07 98 50</a>
+        <a href="tel:+33780861739">Massinissa Yadel : 07 80 86 17 39</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2025 ARTISAN BTP — Tous droits réservés</p>
+      <a href="mentions-legales.html" class="footer__legal-link">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT HTML — toujours AVANT les scripts -->
+  <div class="chat-bubble" id="chatBubble" aria-label="Ouvrir le chat">
+    <svg class="chat-bubble__icon chat-bubble__icon--open" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M3 3h18v13H13l-4 4v-4H3V3z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/>
+    </svg>
+    <svg class="chat-bubble__icon chat-bubble__icon--close" width="20" height="20" viewBox="0 0 20 20" fill="none" style="display:none">
+      <path d="M4 4l12 12M16 4L4 16" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <span class="chat-bubble__notif">1</span>
+  </div>
+
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-window__header">
+      <div class="chat-window__avatar">
+        <img src="images/robot.png" alt="Assistant" style="width:24px;height:24px;object-fit:contain;" />
+      </div>
+      <div class="chat-window__info">
+        <strong>Assistant ARTISAN BTP</strong>
+        <span class="chat-window__status"><span class="chat-window__dot"></span> En ligne</span>
+      </div>
+      <button class="chat-window__minimize" id="chatMinimize">&#8722;</button>
+    </div>
+    <div class="chat-window__messages" id="chatMessages">
+      <div class="chat-msg chat-msg--bot">
+        <div class="chat-msg__bubble">
+          Bonjour, je suis l'assistant ARTISAN BTP. Comment puis-je vous aider ?
+        </div>
+        <div class="chat-msg__suggestions">
+          <button class="chat-suggestion">Quels sont vos services ?</button>
+          <button class="chat-suggestion">Zone d'intervention ?</button>
+          <button class="chat-suggestion">Délai pour un devis ?</button>
+        </div>
+      </div>
+    </div>
+    <div class="chat-window__footer">
+      <input type="text" id="chatInput" placeholder="Votre question..." autocomplete="off" />
+      <button class="chat-send" id="chatSend" aria-label="Envoyer">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M2 8l12-6-5 6 5 6-12-6z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- BANDEAU APPEL MOBILE -->
+  <a href="tel:+33164570916" class="mobile-call-bar">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 2h3l1.5 4L6.5 7.5a10 10 0 0 0 4 4l1.5-2 4 1.5v3c0 1-1 1.5-2 1.5C7.5 15.5 2.5 10.5 2.5 4c0-1 .5-2 1.5-2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+    Appeler maintenant — 01 64 57 09 16
+  </a>
+
+
+  <div id="imageModal" class="image-modal">
+    <span class="image-modal__close">&times;</span>
+    <img id="modalImg" class="image-modal__content">
+  </div>
+
+  <!-- SCRIPTS — toujours en dernier, après tout le HTML -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+
+</body>
+</html>

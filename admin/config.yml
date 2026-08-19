@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Dossier où les images uploadées depuis l'admin seront rangées
+media_folder: "images/blog"
+public_folder: "images/blog"
+
+publish_mode: simple
+
+collections:
+  - name: "articles"
+    label: "Articles de blog"
+    label_singular: "Article"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Résumé (affiché dans la liste des articles)", name: "excerpt", widget: "text" }
+      - { label: "Image de couverture", name: "image", widget: "image", required: false }
+      - { label: "Contenu de l'article", name: "body", widget: "markdown" }
+
+  - name: "services_page"
+    label: "Page Services"
+    files:
+      - name: "services"
+        label: "Contenu de la page Services"
+        file: "content/services.json"
+        fields:
+          - { label: "Titre de la page", name: "intro_title", widget: "string" }
+          - { label: "Texte d'introduction", name: "intro_text", widget: "text" }
+          - label: "Services (7 blocs, dans l'ordre d'affichage)"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Titre du service", name: "title", widget: "string" }
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+                media_folder: "images/services"
+                public_folder: "images/services"
+              - { label: "Texte alternatif de la photo", name: "alt", widget: "string" }
+              - label: "Texte de présentation"
+                name: "body"
+                widget: "text"
+                hint: "Séparez les paragraphes par une ligne vide. Pour une liste à puces, mettez chaque ligne sur '- votre texte' (aussi séparée par une ligne vide)."
+              - { label: "Ligne tarif", name: "tarif", widget: "string" }
