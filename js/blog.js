@@ -51,7 +51,7 @@ function formatDate(iso) {
   return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-/* ---- Récupère la liste des fichiers .md du dossier content/articles ---- */
+/* ---- Récupère la liste des fichiers .md du dossier content/article ---- */
 async function fetchArticleList() {
   const res = await fetch(API_BASE);
   if (!res.ok) throw new Error('Impossible de charger les articles (dépôt GitHub non configuré ?)');
