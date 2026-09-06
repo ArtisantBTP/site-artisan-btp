@@ -85,7 +85,7 @@ async function renderBlogList() {
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
     container.innerHTML = articles.map(a => `
-      <a href="article.html?slug=${encodeURIComponent(a.slug)}" class="blog-card reveal">
+      <a href="article.html?slug=${encodeURIComponent(a.slug)}" class="blog-card">
         ${a.image ? `<div class="blog-card__img"><img src="${a.image}" alt="${a.title || ''}" loading="lazy" /></div>` : ''}
         <div class="blog-card__body">
           <span class="blog-card__date">${formatDate(a.date)}</span>
