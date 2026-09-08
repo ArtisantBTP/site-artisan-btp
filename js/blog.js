@@ -51,16 +51,17 @@ function formatDate(iso) {
   return d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-/* ---- Récupère la liste des fichiers .md du dossier content/article ---- */
+/* ---- Récupère la liste des fichiers .md du dossier content/articles ---- */
 async function fetchArticleList() {
-  const res = await fetch(API_BASE);
+  const res = await fetch(API_BASE + '&t=' + Date.now());
   if (!res.ok) throw new Error('Impossible de charger les articles (dépôt GitHub non configuré ?)');
   const files = await res.json();
   return files.filter(f => f.name.endsWith('.md'));
 }
 
 async function fetchArticle(filename) {
-  const res = await fetch(RAW_BASE + filename);
+  const res = await fetch(RAW_BASE + filename + '?t=' + Date.now()); // évite le cache
+  if (!res.ok) throw new Error('Article pas encore synchronisé : ' + filename);
   const raw = await res.text();
   return parseArticle(raw);
 }
@@ -77,10 +78,20 @@ async function renderBlogList() {
       return;
     }
 
-    const articles = await Promise.all(files.map(async f => {
-      const { meta } = await fetchArticle(f.name);
-      return { ...meta, slug: f.name.replace(/\.md$/, '') };
-    }));
+    const articles = (await Promise.all(files.map(async f => {
+      try {
+        const { meta } = await fetchArticle(f.name);
+        return { ...meta, slug: f.name.replace(/\.md$/, '') };
+      } catch (err) {
+        console.warn('Article ignoré (pas encore synchronisé) :', f.name);
+        return null;
+      }
+    }))).filter(Boolean);
+
+    if (!articles.length) {
+      container.innerHTML = '<p class="blog-empty">Articles en cours de synchronisation, réessayez dans une minute.</p>';
+      return;
+    }
 
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -99,7 +110,7 @@ async function renderBlogList() {
   }
 }
 
-/* ==================== PAGE ARTICLE (article.html) =================== */
+/* ==================== PAGE ARTICLE (article.html) ==================== */
 async function renderSingleArticle() {
   const container = document.getElementById('articleContent');
   if (!container) return;
