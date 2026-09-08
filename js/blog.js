@@ -99,7 +99,7 @@ async function renderBlogList() {
   }
 }
 
-/* ==================== PAGE ARTICLE (article.html) ==================== */
+/* ==================== PAGE ARTICLE (article.html) =================== */
 async function renderSingleArticle() {
   const container = document.getElementById('articleContent');
   if (!container) return;
