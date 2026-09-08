@@ -8,6 +8,7 @@ const RAW_BASE = RAW_ROOT + 'content/articles/';
 
 /* ---- Parseur de front matter (--- ... ---) minimaliste ---- */
 function parseArticle(raw) {
+  raw = raw.replace(/^\uFEFF/, ''); // retire le caractère invisible BOM si présent
   const match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
   if (!match) return { meta: {}, body: raw };
 
