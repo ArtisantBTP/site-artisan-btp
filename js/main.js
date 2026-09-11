@@ -20,7 +20,7 @@ const EMAILJS_PUBLIC_KEY     = '8UiHqs1DEDlNcYDNw';
    Format attendu : https://calendly.com/NOM-UTILISATEUR/NOM-EVENEMENT
 */
 const CALENDLY_LINKS = {
-  andre:       'https://calendly.com/andre-artisant-btp/rdv-30min',
+  andre:       'https://calendly.com/andremaury1957',
   massinissa:  'https://calendly.com/massinissa-artisant-btp/rdv-30min'
 };
 
